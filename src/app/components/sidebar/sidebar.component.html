@@ -1,0 +1,30 @@
+<div class="navbar">
+    <div class="userContent center">
+        <img style ="margin-bottom: 2rem;"class="a"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL8fcxTF2zXP-h1regn9RiHJBJXHRWKkPAyA&usqp=CAU">
+        <h4 class="name text-white" style="font-family:cursive;">{{a.username}}</h4>
+        <h5 class="mail text-white">{{a.email}}</h5>
+        <hr>
+    
+    <div  class="menu center">
+        <div> <span class="text-white"><b style="font-family:cursive;">Dashboard</b></span></div>
+        <button mat-button class="menu-button mt-4" (click)="onBlog()"> 
+            <mat-icon class="text-white">message</mat-icon>
+            <span class="text-white">Post</span>
+        </button>
+       <button mat-button class="menu-button" (click)="dispPost()">
+            <mat-icon class="text-white">pages</mat-icon>
+            <span class="text-white">pages</span>
+        </button>
+         <!-- <button mat-button class="menu-button">
+            <mat-icon class="text-white">comments</mat-icon>
+            <span class="text-white">comments</span>
+        </button> -->
+        <!-- <button mat-button class="menu-button">
+            <mat-icon class="text-white">settings</mat-icon>
+            <span class="text-white">Settings</span>
+        </button> -->
+
+    </div>
+</div>
+    
+</div>

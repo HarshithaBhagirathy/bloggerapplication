@@ -1,0 +1,19 @@
+<mat-card>
+    <form (submit)="onPostData(postForm)" #postForm = "ngForm" >
+        <mat-form-field>
+            <input type="text" matInput name="title" placeholder="Post Title here" required ngModel>
+        </mat-form-field>
+        <mat-form-field>
+            <textarea  matInput name="content" rows="12" placeholder="Post Content here" required ngModel>
+            </textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <textarea  matInput name="image" rows="5" placeholder="Image Url" required ngModel>
+            </textarea>
+        </mat-form-field>
+        <button mat-raised-button color="accent" type="submit">
+            Add post
+        </button>
+    </form>
+</mat-card>
+

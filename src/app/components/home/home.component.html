@@ -1,0 +1,117 @@
+<nav id="navbar" class="navbar-fixed-top">
+  <ul>
+      <li> <a routerLink="/register">Register</a></li>
+      <li><a routerLink="/login">Login</a><br></li>
+      <li> <a routerLink="/about" >About</a></li>
+  </ul>
+</nav>
+ 
+
+<section id="music">
+  <div class="container">
+      <div class="music-content">
+          <h1 class="blogger" style="font-size:2.8rem;padding-bottom:10px ;">Blogger<span class="bliss">  Bliss</span></h1>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" class="d-block w-100" alt="NOooo">
+                <div class="carousel-caption firstSlide">
+                  <h3 class="animate__animated animate__fadeInRight">Blogs</h3>
+                  <h2  class="animate__animated animate__fadeInRight">Publish your passions,your way</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.istockphoto.com/photos/top-view-of-words-new-blog-post-written-on-spiralbound-notepad-on-picture-id1157749043?k=20&m=1157749043&s=612x612&w=0&h=NVF5OPduCotPMlVE-jQH5FdnJQicST8-55cBreuVyuc=" class="d-block w-100">
+                <div class="carousel-caption secSlide">
+                    <h3 class="animate__animated animate__fadeInLeft" style="color:rgb(255, 183, 50); font-family:Verdana, Geneva, Tahoma, sans-serif"><b>Bliss Everyday</b></h3>
+                    <h2  class="animate__animated animate__fadeInLeft " style="color:rgb(89, 166, 11);" >Create a unique and beautiful blog</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.istockphoto.com/photos/shot-of-an-unrecognizable-businessman-working-on-his-laptop-in-the-picture-id1352603244?b=1&k=20&m=1352603244&s=170667a&w=0&h=OA9MXkEzAuMKB9SAWNnaOc-JU6W0-T5o4iDOmfeGk3Y=" class="d-block w-100">
+                <div class="carousel-caption thirdSlide">
+                    <h3 class="animate__animated animate__fadeInUp" style="color: rgb(255, 255, 255);"><b>Post your happiness</b></h3>
+                    <h2 class="animate__animated animate__fadeInUp" style="margin-top: 2em;">Let Others Discover whats your story</h2>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<section id="entertain">
+  <div class="container">
+      <h2>A world of entertainment. Available wherever you are.</h2>
+      <p class="lead">Blogger Bliss is an indian-based style blog that covers fashion, beauty, food, entertainment and lifestyle topics.</p>
+  </div>
+</section>
+
+<section id="blogs">
+  <span  class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4" *ngFor="let i of alldata">
+    <span class="col cardSize g-2  mt-3 mb-2 h-100 shadow hovers" *ngFor="let p of i.blogs">
+        <span class="card mb-4 g-2 spanEff">
+          <span class="upper">
+           <img class="card-img-top adjHeight" src={{p.image}} alt="Card image cap">
+         
+          </span>
+          <div class="card-body">
+            <h4 class="card-title" style="font-weight:bold;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">{{p.title}}</h4>
+            <span class="oneLine">
+              <h5 class="card-text">-By {{i.username}}</h5> 
+              <button  style="margin-left:11rem;" class="custom-btn btn-1" (click)="fullcontent(p._id,i._id)">Read More</button>
+            </span>
+          </div>
+        </span>
+      </span>
+    </span>
+</section>
+
+
+<footer>
+  <div class="container">
+      <div class="footer-links d-flex justify-content-around">
+          <ul>
+              <li>EXPLORE</li>
+              <li>food</li>
+              <li>Lifestyle</li>
+              <li>Motivation</li>
+              <li>Economics</li>
+              <li>Politics</li>
+          </ul>
+          <ul>
+              <li>BE A BLOGGER</li>
+              <li>register</li>
+              <li>login yourself</li>
+              <li>post a blog</li>
+              <li>view ur blogs</li>
+              <li>view all blogs</li>
+          </ul>
+          <ul>
+              <li>SOCIAL PAGES</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="footer-bottom">
+      Blogger  Bliss
+  </div>
+  
+</footer>

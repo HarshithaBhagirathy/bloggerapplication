@@ -1,0 +1,158 @@
+Result Skip Results Iframe
+
+a{
+  text-decoration: none;
+  color: black;
+}
+#navbar{
+  background-color: white;
+  color: rgb(59, 46, 46);
+}
+#navbar ul{
+  display: flex;
+  list-style: none;
+  padding: 5px;
+}
+#navbar ul li a{
+  color: rgb(35, 32, 30);
+  display: block;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+#navbar ul li a:hover{
+  background-color: rgba(113, 97, 97, 0.201);
+  border-radius: 5px;
+}
+
+/* Home Page */
+
+.home-background {
+  min-height: 87vh;
+  padding-top: 100px;
+  text-align: center;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 0, 0, 0.5)
+    ),
+    url(http://gratisography.com/pictures/262_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home-message {
+  font-family: Special Elite;
+}
+
+.home-message > h1 {
+  font-size: 5em;
+  color: #FDC;
+}
+
+@media (max-width: 400px) {
+    .home-message > h1 {
+        font-size: 3.5em;
+    }
+}
+
+.home-message > h2 {
+  color: #FDC;
+}
+
+.home-divider {
+  height: 2px;
+  border: none;
+  margin: 3% 10% 0 10%;
+  border-radius: 50%;
+  background-color: #FDC;
+}
+
+.home-social-buttons {
+  padding-top: 3em;
+}
+
+.home-social-buttons ul.list-inline li a.btn-default {
+  margin-bottom: 5px;
+}
+
+/* About Page */
+
+.about-background {
+  min-height: 100vh;
+  padding-top: 100px;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(http://gratisography.com/pictures/263_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content-message {
+  font-family: Special Elite;
+  color: #FDC;
+}
+
+/* Portfolio Page */
+.portfolio-background {
+  min-height: 100vh;
+  padding-top: 60px;
+  text-align: center;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(http://gratisography.com/pictures/239_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.project-box {
+  position: relative;
+  background: none;
+  padding-bottom: 60%;
+  border: 1px solid #FDC;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.project-content {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+}
+
+.project-image {
+  position: absolute;
+  padding-top: 15%;
+  width: 100%;
+  height: 65%;
+  background-color: #FDC;
+  background-image: url(http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.project-title {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  padding-top: 5%;
+  background-color: black;
+  overflow: hidden;
+}
+
+

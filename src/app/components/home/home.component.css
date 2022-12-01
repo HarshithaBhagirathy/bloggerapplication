@@ -1,0 +1,383 @@
+
+/* img{
+  height: 580px;
+  object-fit: cover;
+  width:100%
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+#navbar{
+    background-color: #252525;
+    color: white;
+}
+h1{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+img{
+    display: block;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*======= navbar =========*/
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+}
+#navbar ul li a{
+    color: #efefef;
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+#navbar ul li a:hover{
+    background-color: rgba(113, 97, 97, 0.201);
+    border-radius: 5px;
+}
+
+/* ======= main section ========*/
+#showcase{
+    background: url(https://i.postimg.cc/TYFy6QPq/kenny-eliason-plrlb68-XPq-I-unsplash.jpg) center center/cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+}
+#showcase::before{
+    content: "";
+    background-color: #000000;
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.75;
+    z-index: -1;
+
+}
+#showcase .main-content{
+    padding-top: 25vh;
+    /* z-index: 2; */
+}
+#showcase h1{
+    font-size: 4rem;
+    /* margin-bottom: 20px; */
+    border-bottom: 2px solid #ff1500;
+    display: inline-block;
+}
+#showcase h1 span{
+    color: #ff1500;
+}
+#showcase h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+/*========= MUSIC ===========*/
+#music{
+    background-color: rgba(242, 46, 46, 0.442);
+    color: white;
+    padding: 2.5rem 0;
+}
+#music .music-content h1{
+    font-size: 1rem;
+    margin-bottom: 1.6rem;
+}
+#music .music-content h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#music .btn{
+    padding: 20px 15px;
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ce1100;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+#music .btn:hover{
+    opacity: 0.9;
+}
+#music .music-image{
+    width: 500px;
+    margin: 20px auto;
+    
+
+}
+#music img{
+    /* background-color: black; */
+    width: 100%;
+    margin-top: 1.3rem;
+    height:400px
+}
+
+/*===== Videos ======*/
+#videos .videos-content{
+    padding: 4rem 0;
+}
+#videos .videos-content h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+#videos .btn{
+    background-color: rgb(8, 8, 83);
+    border: none;
+    color: white;
+    padding: 20px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/*===== Entertain ======*/
+#entertain{
+    background-color: #252525;
+    color: white;
+    padding: 8rem 0;
+}
+
+/*====== Gift cards ======*/
+#giftcards{
+    padding: 4rem 0;
+}
+#giftcards .gift-content{
+    display: grid;
+    gap: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+#giftcards img{
+    margin-top: 0%;
+}
+#giftcards p{
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+#giftcards a{
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/*===== Footer ======*/
+footer{
+    background-color: #252525;
+    color: white;
+}
+footer .footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 2rem;
+    text-align: left;
+    font-size: 14px;
+}
+footer .footer-links ul{
+    list-style: none;
+}
+footer .footer-links li:first-child{
+    border-bottom: 1px solid #444;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+
+}
+footer .footer-links a{
+    color: rgb(207, 207, 207);
+    padding: 2px 0;
+    display: inline-block;
+}
+.footer-bottom{
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* utility class */
+.container{
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+.lead{
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+.btn:hover{
+    opacity: 0.9;
+
+}
+@media screen and (max-width:805px) {
+    #showcase h1{
+        font-size: 3rem;
+    }
+    #showcase h2{
+        font-size: 1.5rem;
+    }
+    #showcase .main-content{
+        padding-top: 10vh;
+    }
+    /* .lead{
+        font-size: 1rem;
+    } */
+    #music .music-content h1{
+        font-size: 2rem;
+    }
+    #music .music-content h2{
+        font-size: 1.5rem;
+    }
+    #music .btn{
+        font-size: 14px;
+    }
+    #giftcards .gift-content{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    footer .footer-links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:600px) {
+    footer .footer-links{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .lead{
+        font-size: 14px;
+    }
+}
+
+.blogger
+{  
+   border-bottom: 3px solid #0f0c0c;
+   display: inline-block;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+} 
+.bliss{
+    color: #272121;
+}
+/* diplaying cards */
+
+
+.cardSize{
+    width: 26rem;
+    height: 30rem;
+    margin-right: 2em; 
+    margin-left: 8em; 
+}
+
+.adjHeight{
+    height: 16rem; width: 25.4rem; margin-top: 2px; object-fit: cover;
+}
+#blogs{
+ background-color: rgb(41, 37, 37);
+}
+.oneLine{
+    display: flex;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 1 */
+.btn-1 {
+  background: rgb(131, 6, 129);
+  background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+  border: none;
+}
+.btn-1:hover {
+   background: rgb(73, 6, 131);
+background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+}
+
+/* 2 */
+.btn-2 {
+  background: rgb(96,9,240);
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border: none;
+  
+}
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-2:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+/* ------ */
+.hovers:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+
+}
+
+.spanEff{
+    display: flex;
+}
+
+/*like button  */
+/* .upper img
+
+{
+
+    height: 300px;
+
+    width: 100%;
+
+    position: relative;
+
+    object-fit: cover;
+
+    border-top-left-radius: 10px;
+
+    border-top-right-radius: 10px;
+
+} */
+
+
+
+
